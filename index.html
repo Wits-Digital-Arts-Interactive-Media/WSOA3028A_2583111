@@ -8,13 +8,23 @@
     <meta name="keywords" content="Interactive Media, Web design, Game development, Blogs, Essays">
     <title>WSOA3028A Interactive Media Homepage</title>
 
-    <script type="module" src="./scripts/menu.js"></script>
+    <script type="module">
+        import { initialise } from "./scripts/menu.js";
+        initialise("Home")  
+    </script>
+    
+
+
 </head>
 <body>
     <header>
-        <h1>Kesavan's Interactive Media Homepage</h1>
-        <nav></nav>
+        Kesavan's Interactive Media Homepage
+
+        <nav>
+            
+        </nav>
     </header>
+ 
 
     <main>
         <h2>Hey Yo</h2>
@@ -25,12 +35,5 @@
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
     </footer>
      
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Pass the current page title to initialise the menu
-            const currentPage = document.title;
-            initialise(currentPage);
-        });
-    </script>
 </body>
 </html>
