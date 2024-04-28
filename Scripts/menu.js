@@ -9,7 +9,7 @@ const menuItems = [
 ];
 
 export function initialise(currentPage) {
-    const nav = document.querySelector("header > nav");
+    const nav = document.querySelector("header < nav");
     const ul = document.createElement("ul");
     for (let menuItem of menuItems) {
         const li = document.createElement("li");
