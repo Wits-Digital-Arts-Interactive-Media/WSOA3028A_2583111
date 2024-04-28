@@ -1,11 +1,11 @@
 const root = "/WSOA3028A_2583111";
 
 const menuItems = [
-    { name: "Home", href: root + "/index.html" },
-    { name: "Blogs", href: "/Blogs/index.html" },
+    { name: "Home", href: "/index.html" },
+    { name: "Blogs", href: `/Blogs/index.html` },
     { name: "Essay", href: `/Essay/index.html` },
-    { name: "Portfolios", href: `${root}/Portfolios/index.html` },
-    { name: "Design", href: `${root}/Design/index.html` },
+    { name: "Portfolios", href: `/Portfolios/index.html` },
+    { name: "Design", href: `/Design/index.html` },
 ];
 
 export function initialise(currentPage) {
