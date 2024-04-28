@@ -8,26 +8,33 @@
     <meta name="keywords" content="Interactive Media, Web design, Game development, Blogs, Essays, Po">
     <title>WSOA3028A Blog Posts</title>
 
-    <!-- Include the script to dynamically generate the menu -->
-    <script type="module" src="../scripts/menu.js"></script>
+    <script type="module">
+        import { initialise } from "../scripts/menu.js";
+        initialise("Blogs")  
+    </script>
+
 
 </head>
 <body>
     <header>
         <h1>Blog Posts</h1>
-        <!-- Navigation menu will be dynamically generated here -->
-        <nav></nav>
+        <nav>
+            
+        </nav>
     </header>
+ 
 
     <main>
         <article>
-            <h2><a href="blog.html">Blog Pages - Has All Current Blog Posts</a></h2>
-            <p>Here is a link to all the blog posts.</p>
+            <h2><a href="blog.html">Blog Pages- Has All Current Blog Posts</a></h2>
+            <p>Here is a link to the all the blog post</p>
         </article>
     </main>
     
     <footer>
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
     </footer>
+     
 </body>
+
 </html>
