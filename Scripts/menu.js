@@ -2,12 +2,12 @@ const root =  "/WSOA3028A_2583111"
 
 const menuItems = [
     {name: "Home", href: root + "/index.html"},
-    {name: "Blog", href: `${root}/Blogs/index.html`},
-    {name: "Essays", href: `${root}/Essay/essay.html`},
-    {name: "Portfolio", href: `${root}/Portfolio/portfolio.html`},
-    {name: "Design", href: `${root}/Design/index.html`},
+    {name: "Blogs", href: `${root}/blogs/index.html`},
+    {name: "Essays", href: `${root}/essays/index.html`},
+    {name: "Portfolio", href: `${root}/portfolio/index.html`},
+    {name: "Design", href: `${root}/design/index.html`},
 
-];
+]
 
 export function initialise(currentPage) {
     const nav = document.querySelector("header > nav")
