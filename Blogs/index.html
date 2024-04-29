@@ -14,6 +14,11 @@
         initialise("Blog Posts")  
     </script>
 
+  <script type="module">
+    import { blogIndexes } from "../Scripts/menu.js";
+    blogIndexes();
+  </script>
+
 </head>
 
 <body>
@@ -22,15 +27,14 @@
         <nav>
 
         </nav>
+        <hr>
     </header>
- 
 
-    <main>
-        <article>
-            <h2><a href="blog1.html">Blog Pages- Has All Current Blog Posts</a></h2>
-            <p>Here is a link to the all the blog post</p>
-        </article>
-    </main>
+    <ul id="blogList">
+
+    </ul>
+  
+    <div id="blogContent"></div>
     
     <footer>
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
