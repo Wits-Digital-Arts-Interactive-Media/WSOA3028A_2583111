@@ -2,7 +2,7 @@ const root = "/WSOA3028A_2583111";
 
 const menuItems = [
     { name: "Home", href: root + "/index.html" },
-    { name: "Blog Posts", href: `${root}/Blogs/index.html` },
+    { name: "Blog Posts", href: root + "/Blogs/index.html" },
     { name: "Essay", href: `${root}/Essay/index.html` },
     { name: "Portfolio", href: `${root}/Portfolios/index.html` },
     { name: "Design", href: `${root}/Design/index.html` },
