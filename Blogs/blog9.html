@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is the homepage for the interactive media web page">
     <meta name="author" content="Kesavan Naicker">   
-    <meta name="keywords" content="Interactive Media, Web design, Game development, Blogs, Essays, Po">
-    <title>WSOA3028A Blog</title>
+    <meta name="keywords" content="Interactive Media, Web design, Game development, Blogs, Essays">
+    <title>Blog Posts</title>
 
     <style>
         body {
@@ -40,16 +40,54 @@
             text-align: center;
             padding: 20px;
         }
+        section {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        section p {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        section details {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        section summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+        section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        section li {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
     </style>
+
+    <script type="module">
+        import { initialise } from "../Scripts/menu.js";
+        initialise("Blog Posts")
+    </script>
 
 </head>
 <body>
     <header>
-        <h1>Week Nine</h1>
+        <h1>Blog Posts</h1>
         <nav>
-
+            
         </nav>
-
     </header>
     
 </body>
