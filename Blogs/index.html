@@ -6,7 +6,7 @@
     <meta name="description" content="This is the homepage for the interactive media web page">
     <meta name="author" content="Kesavan Naicker">   
     <meta name="keywords" content="Interactive Media, Web design, Game development, Blogs, Essays">
-    <title>WSOA3028A Blog Posts</title>
+    <title>Blog Posts</title>
 
     <style>
         body {
@@ -36,13 +36,38 @@
             text-decoration: none;
             color: black; 
         }
-        article {
+        main {
             text-align: center;
+            padding: 20px;
+        }
+        section {
+            margin-top: 20px;
             margin-bottom: 20px;
         }
-        article h2 {
+        section h2 {
             font-size: 24px;
             margin-bottom: 10px;
+        }
+        section p {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        section details {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        section summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+        section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        section li {
+            margin-bottom: 10px;
+            text-align: left;
         }
         footer {
             text-align: center;
@@ -52,25 +77,18 @@
     </style>
 
     <script type="module">
-        import { initialise } from "../scripts/menu.js";
-        initialise("Blog Posts");  
+        import { initialise } from "../Scripts/menu.js";
+        initialise("Blog Posts")
     </script>
 
-  <script type="module">
-    import { blogIndexes } from "../Scripts/menu.js";
-    blogIndexes();
-  </script>
-
 </head>
-
 <body>
     <header>
         <h1>Blog Posts</h1>
         <nav>
-
+            
         </nav>
     </header>
-
     <main>
 
 
@@ -80,31 +98,31 @@
     </article>
 
     <article>
-        <h2><a href="blog2.html">Week 2</a></h2>
+        <h3><a href="blog2.html">Week 2</a></h3>
     </article>
 
     <article>
-        <h2><a href="blog3.html">Week 3</a></h2>
+        <h4><a href="blog3.html">Week 3</a></h4>
     </article>
 
     <article>
-        <h2><a href="blog4.html">Week 4</a></h2>
+        <h5><a href="blog4.html">Week 4</a></h5>
     </article>
 
     <article>
-        <h2><a href="blog6.html">Week 6</a></h2>
+        <h6><a href="blog6.html">Week 6</a></h6>
     </article>
 
     <article>
-        <h2><a href="blog8.html">Week 8</a></h2>
+        <h7><a href="blog8.html">Week 8</a></h7>
     </article>
 
     <article>
-        <h2><a href="blog9.html">Week 9</a></h2>
+        <h8><a href="blog9.html">Week 9</a></h8>
     </article>
 
     <article>
-        <h2><a href="blog10.html">Week 10</a></h2>
+        <h9><a href="blog10.html">Week 10</a></h9>
     </article>
 </main>
 
