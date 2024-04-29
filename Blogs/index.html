@@ -55,6 +55,12 @@
         import { initialise } from "../scripts/menu.js";
         initialise("Blog Posts");  
     </script>
+
+  <script type="module">
+    import { blogIndexes } from "../Scripts/menu.js";
+    blogIndexes();
+  </script>
+
 </head>
 
 <body>
@@ -65,42 +71,12 @@
         </nav>
     </header>
 
-    <main>
+  
+    <ul id="blogList">
 
-
-   
-    <article>
-        <h2><a href="blog1.html">Week 1</a></h2>
-    </article>
-
-    <article>
-        <h2><a href="blog2.html">Week 2</a></h2>
-    </article>
-
-    <article>
-        <h2><a href="blog3.html">Week 3</a></h2>
-    </article>
-
-    <article>
-        <h2><a href="blog4.html">Week 4</a></h2>
-    </article>
-
-    <article>
-        <h2><a href="blog6.html">Week 6</a></h2>
-    </article>
-
-    <article>
-        <h2><a href="blog8.html">Week 8</a></h2>
-    </article>
-
-    <article>
-        <h2><a href="blog9.html">Week 9</a></h2>
-    </article>
-
-    <article>
-        <h2><a href="blog10.html">Week 10</a></h2>
-    </article>
-</main>
+    </ul>
+  
+    <div id="blogContent"></div>
 
     <footer>
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
