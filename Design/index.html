@@ -8,107 +8,71 @@
     <meta name="keywords" content="Interactive Media, Web design, Game development, Blogs, Essays">
     <title>Design Page</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            text-align: center;
-            font-size: 36px; 
-        }
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline-block;
-            margin-right: 20px; 
-            font-size: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: black; 
-        }
-        main {
-            text-align: center;
-            padding: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #f0f0f0;
-        }
-    </style>
-
     <script type="module">
         import { initialise } from "../Scripts/menu.js";
         initialise("Design")
     </script>
 
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
     <header>
-        <h1>Design</h1>
-        <nav>
-            
+        <h1 style="text-align: center; font-size: 36px;">Design</h1>
+       
+        <script src="../Scripts/mouseEvents.js" type="module"></script>
+
+        <nav style="padding: 10px; background-color: #f0f0f0;" class="navList">
         </nav>
     </header>
 
-    <section>
+    <section style="text-align: center;">
         <details>
-            <summary>Wireframes</summary>
+            <summary style="font-weight: bold;">Wireframes</summary>
 
-            <figure>
+            <figure style="display: inline-block; margin: 10px;">
                 <img src="../Images/Website Homepage.jpg"
                     height="300"
                     alt="Homepage Wireframe"
                     title="Homepage Wireframe">
-                <figcaption>Homepage Wireframe</figcaption>     
+                <figcaption style="font-size: 14px;">Homepage Wireframe</figcaption>     
             </figure>
-
-            <figure>
+           <br>
+            <figure style="display: inline-block; margin: 10px;">
                 <img src="../Images/Website BlogPage.jpg"
                     height="300"
                     alt="Blog Posts Wireframe"
                     title="Blog Posts Wireframe">
-                <figcaption>Blog Posts Wireframe</figcaption>     
+                <figcaption style="font-size: 14px;">Blog Posts Wireframe</figcaption>     
             </figure>
-
-            <figure>
+            <br>
+            <figure style="display: inline-block; margin: 10px;">
                 <img src="../Images/Website EssayPage.jpg"
                     height="300"
                     alt="Essay Page Wireframe"
                     title="Essay Page Wireframe">
-                <figcaption>Essay Page Wireframe</figcaption>     
+                <figcaption style="font-size: 14px;">Essay Page Wireframe</figcaption>     
             </figure>
-
-            <figure>
+            <br>
+            <figure style="display: inline-block; margin: 10px;">
                 <img src="../Images/Website DesignPage.jpg"
                     height="300"
                     alt="Design Section Wireframe"
                     title="Design Section Wireframe">
-                <figcaption>Design Section Wireframe</figcaption>     
+                <figcaption style="font-size: 14px;">Design Section Wireframe</figcaption>     
             </figure>
-            
-            <figure>
+            <br>
+            <figure style="display: inline-block; margin: 10px;">
                 <img src="../Images/Website PortfolioPage.jpg"
                     height="300"
                     alt="Portfolio Page Wireframe"
                     title="Portfolio Page Wireframe">
-                <figcaption>Portfolio Page Wireframe</figcaption>     
+                <figcaption style="font-size: 14px;">Portfolio Page Wireframe</figcaption>     
             </figure>
 
         </details>
     </section>
 
-    <footer>
+    <footer style="font-size: 12px; text-align: center; padding: 10px; background-color: #f0f0f0;">
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
     </footer>
      

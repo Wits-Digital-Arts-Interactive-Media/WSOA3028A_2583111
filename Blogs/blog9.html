@@ -8,87 +8,50 @@
     <meta name="keywords" content="Interactive Media, Web design, Game development, Blogs, Essays">
     <title>Blog Posts</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            text-align: center;
-            font-size: 36px; 
-        }
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline-block;
-            margin-right: 20px; 
-            font-size: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: black; 
-        }
-        main {
-            text-align: center;
-            padding: 20px;
-        }
-        section {
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        section h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        section p {
-            text-align: left;
-            margin-bottom: 10px;
-        }
-        section details {
-            text-align: left;
-            margin-bottom: 20px;
-        }
-        section summary {
-            cursor: pointer;
-            font-weight: bold;
-        }
-        section ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        section li {
-            margin-bottom: 10px;
-            text-align: left;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #f0f0f0;
-        }
-    </style>
-
     <script type="module">
         import { initialise } from "../Scripts/menu.js";
         initialise("Blog Posts")
     </script>
 
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
     <header>
-        <h1>Week Nine</h1>
-        <nav>
-            
+        <h1 style="text-align: center;">Week Nine</h1>
+
+        <script src="../Scripts/mouseEvents.js" type="module"></script>
+
+        <nav style="padding: 10px; background-color: #f0f0f0;" class="navList">
         </nav>
     </header>
-    
+
+    <main style="padding: 20px;">
+        <section>
+            <h2 style="font-size: 24px; margin-bottom: 20px;">Towards a study of information geographies: (im)mutable augmentations and a mapping of the geographies of information:</h2>
+            <p>When reflecting on the reading, it talks about the geographies of information, as all information comes from somewhere, both physically and digitally, and is molded and transformed when being passed from one place to another. The connection between location and information is important as it shapes how people view the information, which then forms how they view the world. This leads to an uneven synthesis of this information, as North America and Europe dominate content creation and distribution, leading to some places becoming invisible or misrepresented. The connection between location and information is profound, as it not only shapes how people perceive the world but also influences broader societal narratives and understandings of it. The reading talks about the pervasive influence of digital platforms in shaping our collective knowledge and understanding of the world.</p>
+
+            <p>There is also mention of how there is uneven access to information as well as a lack of engagement with the internet from across the world, which seems unbelievable given the massive growth the internet has experienced over the last few decades. The reason this is an issue is due to the lack of diverse views and information on the internet, leading to more biases and inequalities being formed and thus forms of misrepresentation taking place that may perpetuate existing power dynamics or marginalize certain regions and communities.</p>
+
+            <p>There was also insight into the concept of (im)mutable augmentations, which refers to the evolutionary nature of digital information; it will always be dynamic. All forms of information are constantly being augmented, transformed, and reshaped as they traverse all forms of the digital landscape. These augmentations can be both mutable, in which they are subject to changes and manipulation, and immutable, in which they retain certain characteristics or biases over time.</p>
+
+            <h2 style="font-size: 24px; margin-top: 20px;">How Geography Shapes-and is Shaped by-the Internet</h2>
+            <p>The reading I chose was How Geography Shapes-and is Shaped by-the Internet by Greenstein et al, which takes into account how the internet affects different places. It affects the real world, mainly the cultural, economic, and social. Transportation is brought up as something that benefits from the internet as it cheapens the cost of items as the creation of digital media such as eBooks, online news, and music is cheaper and easier to transport and provide than physical media. The internet also influences and improves communication as it breaks down physical barriers such as geography to allow for an easier way to communicate from local to global.</p>
+
+            <p>Almost everything comes with a catch, and with the beneficial nature of the internet, it's what the reading calls the “Death of Distance.”. It proposes the diminishment of traditional forms of communication, transportation, and search activities. It assumes that digital forms will reduce reliance on traditional channels, such as face-to-face interactions and physical transportation.</p>
+
+            <h3 style="font-size: 20px; margin-top: 20px;">The relationship between readings:</h3>
+            <p>Both the readings, “Towards a study of information geographies: (im)mutable augmentations and a mapping of the geographies of information” by Graham et al. and “How Geography Shapes-and is Shaped by-the Internet” by Greenstein et al., look at the relation between geography and the internet and how either affects one another and vice versa. There is an intricate relationship between the two, but each reading takes different looks at them. The first is the effects of geography and information, and the other is the mostly beneficial effects of the internet.</p>
+
+            <h3 style="font-size: 20px; margin-top: 20px;">How the readings impact my thinking about web dev as a South African:</h3>
+            <p>As a South African web developer, it's crucial to understand the constraints and possibilities arising from geographic factors, particularly acknowledging digital inequalities. Understanding these limitations enables effective strategies for addressing disparities and optimizing web experiences for diverse users. By recognizing the impact of geographic contexts on internet access, content representation, and cultural nuances, developers can tailor solutions that bridge gaps and empower marginalized communities. Thus, integrating this awareness into web development practices fosters inclusivity, accessibility, and relevance in digital spaces for all South African users.</p>
+        </section>
+    </main>
+
+    <footer style="font-size: 12px; text-align: center; padding: 10px; background-color: #f0f0f0;">
+        <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
+    </footer>
+
+    <a href="index.html" class="back-button" style="display: block; text-align: center; margin-top: 20px; text-decoration: none; color: blue;">Back</a>
+
 </body>
 </html>

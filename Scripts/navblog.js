@@ -1,6 +1,6 @@
 const blogLinks = [
     "/WSOA3028A_2583111/Blogs/blog1.html",
-    "//WSOA3028A_2583111/Blogs/blog2.html",
+    "/WSOA3028A_2583111/Blogs/blog2.html",
     "/WSOA3028A_2583111/Blogs/blog3.html",
     "/WSOA3028A_2583111/Blogs/blog4.html",
     "/WSOA3028A_2583111/Blogs/blog5.html",
