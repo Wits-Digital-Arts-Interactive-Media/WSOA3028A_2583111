@@ -8,22 +8,22 @@
     <meta name="keywords" content="Interactive Media, Web design, Game development, Blogs, Essays">
     <title>WSOA3028A Interactive Media Homepage</title>
 
+    <link rel="stylesheet" href="./CSS/Main-Style.css">
 
     <script type="module">
         import { initialise } from "./Scripts/menu.js";
         initialise("Home")
     </script>
-    
-
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+<body>
 
     <header>
-        <h1 style="text-align: center; font-size: 36px;">Kesavan's Interactive Media Homepage</h1>
+        <h1>Kesavan's Interactive Media Homepage</h1>
         
         <script src="Scripts/mouseEvents.js" type="module"></script>
 
-        <nav style="padding: 10px; background-color: #f0f0f0;" class="navList">
+        <nav class="navList">
+
         </nav>
     </header>
 
@@ -31,15 +31,17 @@
         <h2>Hey Yo</h2>
         <p>Welcome to my little website. I'll be using this to post all my work for Interactive Media here.</p>
 
-        
-
-        <img src= "kumalala.gif" alt="Funny gif">
+        <figure style="margin-bottom: 20px;">
+            <img src="../Images/kumalala.gif"
+                height="300"
+                alt="WELCOME"
+                title="WELCOME">
+            <figcaption style="font-size: 14px;">WELCOME</figcaption>     
+        </figure>
     </main>
 
-    <footer style="font-size: 12px; text-align: center; padding: 10px; background-color: #f0f0f0;">
+    <footer>
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
     </footer>
-     
-
 </body>
 </html>

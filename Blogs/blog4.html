@@ -8,61 +8,65 @@
     <meta name="keywords" content="Interactive Media, Web design, Game development, Blogs, Essays">
     <title>Blog Posts</title>
 
+    <!-- Link your CSS file here -->
+    <link rel="stylesheet" href="../CSS/Main-Style.css">
+
+    <!-- Import any JavaScript files you need -->
     <script type="module">
         import { initialise } from "../Scripts/menu.js";
         initialise("Blog Posts")
     </script>
 
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
-
+<body>
     <header>
-        <h1 style="text-align: center;">Week Four</h1>
-
+        <h1>Week Four</h1>
         <script src="../Scripts/mouseEvents.js" type="module"></script>
-
-        <nav style="padding: 10px; background-color: #f0f0f0;" class="navList">
-        </nav>
+        <nav class="navList"></nav>
     </header>
 
     <main>
         <section>
-            <ul style="list-style-type: none; padding: 0;">
-                <li style="margin-bottom: 20px; text-align: left;">
+            <ul>
+                <li>
                     <p>My goal is to create an engaging and effective website that is user-friendly and easy to navigate, showcasing my work from throughout the semester to users, collaborators, and potential employers. I aim to cater primarily to artists and those interested in engaging with art, so simplicity and ease of navigation are paramount, ensuring users can access my portfolio within a few clicks.</p>
                 </li>
-                <li style="margin-bottom: 20px; text-align: left;">
+                <li>
                     <p>The content I intend to display includes written works such as blog posts and essays, along with any artworks I've created, and games developed in other courses.</p>
                 </li>
-                <figure style="margin-bottom: 20px;">
-                    <img src="../Images/Information Structure.png"
-                      height="450"
-                      alt="Information Structure"
-                      title="Information Structure">
-                    <figcaption style="font-size: 14px;">Information Structure</figcaption>     
-                </figure>
-                <figure style="margin-bottom: 20px;">
-                    <img src="../Images/User Flow.png"
-                      height="450"
-                      alt="User Flow"
-                      title="User Flow">
-                    <figcaption style="font-size: 14px;">User Flow</figcaption>     
-                </figure>
-                <li style="margin-bottom: 20px; text-align: left;">
-                    <p><strong>Interface Elements:</strong></p>
+                <li>
+                    <figure>
+                        <img src="../Images/Information Structure.png"
+                          height="450"
+                          alt="Information Structure"
+                          title="Information Structure">
+                        <figcaption>Information Structure</figcaption>     
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="../Images/User Flow.png"
+                          height="450"
+                          alt="User Flow"
+                          title="User Flow">
+                        <figcaption>User Flow</figcaption>     
+                    </figure>
+                </li>
+                <li>
+                    <strong>Interface Elements:</strong>
                     <p>Input Controls: I'll utilize buttons with hyperlinks leading to specific pages, facilitating straightforward navigation to different sections of the website.</p>
                     <p>Navigation Components: A prominent navigation bar will allow users to trace their path effortlessly, ensuring they can easily move between different sections and find the content they're seeking.</p>
                     <p>Information Components: I'm considering incorporating tooltips to provide additional context for features, helping users better understand different elements of the website. Progress bars may also be implemented to track user progress through tasks or content, ensuring clarity and guidance every step of the way.</p>
                 </li>
-                <li style="margin-bottom: 20px; text-align: left;">
+                <li>
                     <p>While my wireframes provided a solid foundation, I recognize that they will need to evolve as the website develops. The final iteration of the website will likely be fundamentally different from the initial concept, requiring adjustments to the wireframes to accommodate new features and improvements.</p>
                 </li>
-                <li style="margin-bottom: 20px; text-align: left;">
-                    <p><strong>Struggles:</strong></p>
+                <li>
+                    <strong>Struggles:</strong>
                     <p>I found consistency and time management to be challenging aspects of website development, particularly when balancing the depth of content with the need for a simple and intuitive user interface. However, compared to learning C#, I found HTML to be more manageable, despite the initial learning curve.</p>
-                    <p><strong>Proud Moment:</strong></p>
+                    <strong>Proud Moment:</strong>
                     <p>I'm proud of how quickly I was able to grasp HTML and integrate it into my website design. Despite facing challenges, I managed to learn and apply new skills within a relatively short timeframe.</p>
-                    <p><strong>Changes for the Future:</strong></p>
+                    <strong>Changes for the Future:</strong>
                     <p>Simplification: I aim to streamline the navigation and content presentation to enhance the overall user experience, making it easier for visitors to find and engage with my work.</p>
                     <p>Accessibility Focus: I plan to prioritize accessibility features and ensure compliance with accessibility standards to make the website inclusive and accessible to all users. This includes optimizing for screen readers, keyboard navigation, and other accessibility tools to accommodate diverse user needs.</p>
                 </li>
@@ -70,11 +74,10 @@
         </section>
     </main>
 
-    <footer style="font-size: 12px; text-align: center; padding: 10px; background-color: #f0f0f0;">
+    <footer>
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
     </footer>
 
-    <a href="index.html" style="display: block; text-align: center; margin-top: 20px; text-decoration: none; color: blue;">Back</a>
 
 </body>
 </html>

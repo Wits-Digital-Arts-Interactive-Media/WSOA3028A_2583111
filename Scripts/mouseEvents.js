@@ -6,8 +6,8 @@ export function handleMouseEvents() {
 
         anchors.forEach(a => {
             a.addEventListener('mouseover', () => {
-                a.style.fontSize = '1.5em';
-                a.style.color = '#A020F0'; 
+                a.style.fontSize = '1.1em';
+                a.style.color = '#BFBDBD'; 
             });
 
             a.addEventListener('mouseout', () => {

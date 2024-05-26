@@ -1,0 +1,80 @@
+/* Main-Style.css */
+
+/* General reset and font settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    color: #ffffff; /* White text color */
+    padding: 30px 0 30px; /* Add margin between header and navList */
+}
+
+header h1 {
+    font-size: 28px;
+    padding: 0px 0 30px;
+    margin: 0; /* Remove margin to better align with header padding */
+    color: #000000;
+}
+
+/* Navigation styles */
+nav.navList {
+    padding: 20px 0; /* Increase top and bottom padding */
+    background-color: #000000; /* Black background */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align items to the bottom */
+    margin-bottom: 20px; /* Add margin bottom for separation from main content */
+}
+
+nav.navList ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav.navList li {
+    margin: 0 20px; /* Adjust margin between menu items */
+}
+
+nav.navList a {
+    display: block;
+    padding: 15px 30px; /* Increase padding for larger boxes */
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text color */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px; /* Make the border radius less rounded */
+    transition: background-color 0.5s, color 0.4s;
+}
+
+nav.navList a:hover {
+    background-color: #000000; /* Black background on hover */
+    color: #ffffff; /* White text color on hover */
+}
+
+/* Style for the current page link */
+nav.navList a.current {
+    background-color: #000000; /* Black background for current page */
+    color: #ffffff; /* White text color for current page */
+    pointer-events: none; /* Disable pointer events for current page link */
+    cursor: default; /* Change cursor to default */
+}
+
+/* Footer styles */
+footer {
+    font-size: 12px; /* Keep footer font size */
+    text-align: center;
+    padding: 10px; /* Decrease footer padding */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+    margin-top: 20px; /* Add margin top for separation */
+}
+
+footer p {
+    margin: 0;
+}

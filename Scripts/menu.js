@@ -13,12 +13,13 @@ export function initialise(currentPage) {
     const ul = document.createElement("ul")
     for (let menuItem of menuItems) {
         const li = document.createElement("li")
-        if (currentPage != menuItem.name) {
-            const a = document.createElement("a")
-            a.innerText = menuItem.name
-            a.setAttribute("href", menuItem.href)
-            li.appendChild(a)
-        } else { li.innerText = menuItem.name }
+        const a = document.createElement("a")
+        a.innerText = menuItem.name
+        a.setAttribute("href", menuItem.href)
+        if (currentPage === menuItem.name) {
+            a.classList.add("current"); // Add class to the current page link
+        }
+        li.appendChild(a)
         ul.appendChild(li)
     }
     nav.appendChild(ul)
