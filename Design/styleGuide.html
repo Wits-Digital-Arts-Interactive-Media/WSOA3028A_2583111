@@ -8,61 +8,74 @@
     <meta name="keywords" content="Interactive Media, Web design, Game development, Blogs, Essays">
     <title>Style Guide</title>
 
-    <!-- Link your CSS file here -->
     <link rel="stylesheet" href="../CSS/Main-Style.css">
+    <link rel="stylesheet" href="../CSS/Slides-Style.css">
+    <link rel="stylesheet" href="../CSS/BackButton-Style.css">
 
-    <!-- Import any JavaScript files you need -->
     <script type="module">
         import { initialise } from "../Scripts/menu.js";
         initialise("Design")
-    </script>
+    </script>       
+    <script src="../Scripts/slides.js" type="module"></script>
+    <script src="../Scripts/backToHome.js" type="module"></script>
 </head>
 <body>
     <header>
-        <!-- Customize your header content here -->
         <h1>Style Guide</h1>
 
-        <!-- Include any additional JavaScript files specific to this page -->
-        <script src="../Scripts/mouseEvents.js" type="module"></script>
+        <script src="../Scripts/mouseEvents.js" type="module"></script>\
 
-        <!-- Your navigation menu goes here -->
+
         <nav class="navList">
-            <!-- Add your navigation links here -->
         </nav>
     </header>
-
+    <div class="button-back"><button id="next" data-target="index.html" class="button" alt="Next">back</button></div>
     <main>
-        <section>
-            <h2>Style Guide</h2>
-            <h3>Goal and Aesthetic:</h3>
-            <p>My goal for my website is to be minimalistic and sleek, designed to showcase art and ideas with clarity and ease of use. This approach will ensure that the content on the website is the primary focus, free from unnecessary distractions, everything should be streamlined, and that users can navigate the site effortlessly.</p>
 
-            <h3>Visual Design Elements:</h3>
-            
-            <h4>Color Scheme:</h4>
-            <ul>
-                <li><strong>Primary Colors:</strong> Black text on a white background, providing high contrast and readability.</li>
-                <li><strong>Accent Colors:</strong> Subtle shades of gray for borders, navigation elements, and hover effects. This minimal color palette reinforces the clean, modern aesthetic while allowing the creative works to take center stage.</li>
-            </ul>
 
-            <h4>Typography:</h4>
-            <ul>
-                <li><strong>Font:</strong> Simple and modern fonts such as Arial, Helvetica, or Sans-serif currently. These fonts are chosen for their legibility and unobtrusive design.</li>
-                <li><strong>Heading Font:</strong> A slightly bolder version of the body text to ensure headings are distinguishable but still harmonious with the overall aesthetic.</li>
-            </ul>
+        <div class="slide">
+            <section>
+                <h2>Style Guide</h2>
+                <h3>Goal and Aesthetic:</h3>
+                <p>My goal for my website is to be minimalistic and sleek, designed to showcase art and ideas with clarity and ease of use. This approach will ensure that the content on the website is the primary focus, free from unnecessary distractions, everything should be streamlined, and that users can navigate the site effortlessly.</p>
+            </section>
+        </div>
 
-            <h4>Layout:</h4>
-            <ul>
-                <li><strong>Structure:</strong> An uncluttered layout with ample white space. This design choice enhances readability and gives the site a spacious, airy feel.</li>
-                <li><strong>Navigation Menu:</strong> A centered navigation menu at the top of the page, ensuring that users can easily access different sections without having to search for navigation options.</li>
-                <li><strong>Responsiveness:</strong> The design is fully responsive, providing an optimal viewing experience across all devices, from desktops to tablets and smartphones.</li>
-            </ul>
-        </section>
+        <div class="slide">
+            <section>
+                <h3>Visual Design Elements:</h3>
+                
+                <h4>Color Scheme:</h4>
+                <ul>
+                    <li><strong>Primary Colors:</strong> Black text on a white background, providing high contrast and readability.</li>
+                    <li><strong>Accent Colors:</strong> Subtle shades of gray for borders, navigation elements, and hover effects. This minimal color palette reinforces the clean, modern aesthetic while allowing the creative works to take center stage.</li>
+                </ul>
+
+                <h4>Typography:</h4>
+                <ul>
+                    <li><strong>Font:</strong> Simple and modern fonts such as Arial, Helvetica, or Sans-serif currently. These fonts are chosen for their legibility and unobtrusive design.</li>
+                    <li><strong>Heading Font:</strong> A slightly bolder version of the body text to ensure headings are distinguishable but still harmonious with the overall aesthetic.</li>
+                </ul>
+            </section>
+        </div>
+                
+        <div class="slide">
+            <section>
+                <h4>Layout:</h4>
+                <ul>
+                    <li><strong>Structure:</strong> An uncluttered layout with ample white space. This design choice enhances readability and gives the site a spacious, airy feel.</li>
+                    <li><strong>Navigation Menu:</strong> A centered navigation menu at the top of the page, ensuring that users can easily access different sections without having to search for navigation options.</li>
+                    <li><strong>Responsiveness:</strong> The design is fully responsive, providing an optimal viewing experience across all devices, from desktops to tablets and smartphones.</li>
+                </ul>           
+            </section>
+        </div>
+
+
     </main>
 
     <footer>
-        <!-- Customize your footer content here -->
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
     </footer>
+
 </body>
 </html>

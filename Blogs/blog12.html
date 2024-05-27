@@ -8,41 +8,49 @@
     <meta name="keywords" content="Interactive Media, Web design, Game development, Blogs, Essays">
     <title>Blog Posts</title>
 
-    <!-- Link your CSS file here -->
     <link rel="stylesheet" href="../CSS/Main-Style.css">
     <link rel="stylesheet" href="../CSS/BlogPage-Style.css">
+    <link rel="stylesheet" href="../CSS/BackButton-Style.css">
 
-    <!-- Import any JavaScript files you need -->
     <script type="module">
         import { initialise } from "../Scripts/menu.js";
         initialise("Blog Posts")
     </script>
     <script src="../Scripts/backToTheTop.js" type="module"></script>
+    <script src="../Scripts/buttons.js" type="module"></script>
+    <script src="../Scripts/backToHome.js" type="module"></script>
 </head>
 <body>
     <header>
-        <!-- Customize your header content here -->
         <h1>Week Twelve</h1>
 
-        <!-- Include any additional JavaScript files specific to this page -->
         <script src="../Scripts/mouseEvents.js" type="module"></script>
 
-        <!-- Your navigation menu goes here -->
         <nav class="navList">
-            <!-- Add your navigation links here -->
         </nav>
     </header>
-
+    <div class="button-back"><button id="next" data-target="index.html" class="button" alt="Next">back</button></div>
     <main>
-        <!-- Customize your main content here -->
-        <h2>Yo</h2>
-        <p>No blog post as yet</p>
-    </main>
 
+    <section class="additional-content">
+        <h2>How does your CSS relate to the HTML and JS?</h2>
+        <p>HTML, JavaScript, and CSS form the foundational trio when developing. Each plays a unique role: HTML provides the structure of a webpage, CSS adds unique styles to the HTML, and JavaScript adds interactivity and dynamic behavior to the webpage. So when I integrated CSS, I didn’t use it much with JavaScript; rather, I used it to make the hyperlinks and images found within the html look more appealing and dynamic. Although the change feels minimal, it makes a huge difference visually, which I believe is important to users.</p>
+
+        <h2>Benefits and Challenges of Responsive Design</h2>
+        <p>I mainly see the use of responsive design as a way to benefit the user experience, as it ensures that the website is accessible and usable on a variety of devices, including desktops, tablets, and smartphones, and thus, by doing this, the website has a further reach, increasing the number of users exposed to the site.</p>
+        <p>One challenge I can see is the need for extensive testing so that many different users across various devices and browsers experience the same amount of consistency, especially with the number of different forms of technology being produced with a multitude of screen sizes and shapes.</p>
+
+        <h2>When thinking about how our code matters in decolonialism, can you identify any things in your own coding practice that you should be aware of?</h2>
+        <p>Decolonialism in technology involves questioning and dismantling the dominant practices that have historically marginalized certain demographics. When designing my website, I am trying to make it a simple and user-friendly experience where all demographics can engage with it without feeling overwhelmed or confused. If I were to raise a concern, it would be to have a completely inclusive design to ensure that my website considers the needs of all diverse groups of users. This includes having accessibility features for people with disabilities and ensuring the interface is usable for people from different cultural backgrounds, as these may be unintentional oversights on my part, but as I develop my website more, I hope to iron out any mistakes.</p>
+    </section>
+</main>
+
+<div class="button-container">
+    <button id="back" data-target="blog11.html" class="button" alt="Back">Back</button>
     <button id="back-to-top" style="display: none;">Back to Top</button>
-    <br>
+    <button id="next" data-target="blog13.html" class="button" alt="Next">Next</button>
+</div>    <br>
     <footer>
-        <!-- Customize your footer content here -->
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
     </footer>
 </body>

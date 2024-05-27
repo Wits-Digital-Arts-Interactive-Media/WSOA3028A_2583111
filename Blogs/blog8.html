@@ -8,16 +8,17 @@
     <meta name="keywords" content="Interactive Media, Web design, Game development, Blogs, Essays">
     <title>Blog Posts</title>
 
-    <!-- Link your CSS file here -->
     <link rel="stylesheet" href="../CSS/Main-Style.css">
     <link rel="stylesheet" href="../CSS/BlogPage-Style.css">
+    <link rel="stylesheet" href="../CSS/BackButton-Style.css">
 
-    <!-- Import any JavaScript files you need -->
     <script type="module">
         import { initialise } from "../Scripts/menu.js";
         initialise("Blog Posts")
     </script>
     <script src="../Scripts/backToTheTop.js" type="module"></script>
+    <script src="../Scripts/buttons.js" type="module"></script>
+    <script src="../Scripts/backToHome.js" type="module"></script>
 
 </head>
 <body>
@@ -26,7 +27,7 @@
         <script src="../Scripts/mouseEvents.js" type="module"></script>
         <nav class="navList"></nav>
     </header>
-
+    <div class="button-back"><button id="next" data-target="index.html" class="button" alt="Next">back</button></div>
     <main>
         <section>
             <ul>
@@ -50,8 +51,11 @@
         </section>
     </main>
 
-    <button id="back-to-top" style="display: none;">Back to Top</button>
-    <br>
+    <div class="button-container">
+        <button id="back" data-target="blog7.html" class="button" alt="Back">Back</button>
+        <button id="back-to-top" style="display: none;">Back to Top</button>
+        <button id="next" data-target="blog9.html" class="button" alt="Next">Next</button>
+    </div>    <br>
     <footer>
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
     </footer>

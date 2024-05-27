@@ -1,4 +1,4 @@
-/* Main-Style.css */
+
 /* Nunito font import */
 @font-face {
     font-family: 'Nunito';
@@ -21,19 +21,9 @@
 /* Styling for main content */
 main {
     font-family: 'Nunito Light', sans-serif;
-    margin: 0 auto; /* Center the main content */
-    max-width: 900px; /* Limit the width to enhance readability */
-    padding: 0 20px; /* Add padding on both sides for better spacing */
+    margin: 0 auto; 
+    max-width: 900px; 
+    padding: 0 20px; 
 }
 
 
-/* Responsive GIF */
-figure {
-    margin-bottom: 20px;
-}
-
-/* Responsive GIF */
-img {
-    width: 50%;
-    height: auto;
-}

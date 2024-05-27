@@ -6,6 +6,8 @@ const menuItems = [
     { name: "Essay", href: `${root}/Essay/index.html` },
     { name: "Portfolio", href: `${root}/Portfolios/index.html` },
     { name: "Design", href: `${root}/Design/index.html` },
+    { name: "Profile", href: `${root}/Profile/index.html` },
+
 ]
 
 export function initialise(currentPage) {
@@ -17,7 +19,7 @@ export function initialise(currentPage) {
         a.innerText = menuItem.name
         a.setAttribute("href", menuItem.href)
         if (currentPage === menuItem.name) {
-            a.classList.add("current"); // Add class to the current page link
+            a.classList.add("current"); 
         }
         li.appendChild(a)
         ul.appendChild(li)

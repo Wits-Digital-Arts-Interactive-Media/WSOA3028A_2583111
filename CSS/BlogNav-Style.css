@@ -1,7 +1,7 @@
 /* BlogNav-Style.css */
 .blog-nav-section {
     width: 100%;
-    background-color: #f0f0f0; /* Adjust background color as needed */
+    background-color: #f0f0f0;
     padding: 10px 0;
 }
 
@@ -25,12 +25,12 @@
     text-align: center;
     text-decoration: none;
     color: #000;
-    border: 2px solid #ccc; /* Adjust border color as needed */
+    border: 2px solid #ccc;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .blog-nav-section a:hover {
-    background-color: #000000; /* Adjust hover color as needed */
+    background-color: #000000; 
     color: #ffffff; 
     transform: scale(1.05);
 }

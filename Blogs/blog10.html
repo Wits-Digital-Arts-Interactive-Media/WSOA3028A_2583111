@@ -8,31 +8,29 @@
     <meta name="keywords" content="Interactive Media, Web design, Game development, Blogs, Essays">
     <title>Blog Posts</title>
 
-    <!-- Link your CSS file here -->
     <link rel="stylesheet" href="../CSS/Main-Style.css">
     <link rel="stylesheet" href="../CSS/BlogPage-Style.css">
+    <link rel="stylesheet" href="../CSS/BackButton-Style.css">
 
-    <!-- Import any JavaScript files you need -->
     <script type="module">
         import { initialise } from "../Scripts/menu.js";
         initialise("Blog Posts");
     </script>
     <script src="../Scripts/backToTheTop.js" type="module"></script>
     <script src="../Scripts/mouseEvents.js" type="module"></script>
+    <script src="../Scripts/buttons.js" type="module"></script>
+    <script src="../Scripts/backToHome.js" type="module"></script>
 </head>
 <body>
     <header>
-        <!-- Customize your header content here -->
         <h1>Week Ten</h1>
 
-        <!-- Include any additional JavaScript files specific to this page -->
         <nav class="navList">
-            <!-- Add your navigation links here -->
         </nav>
     </header>
+    <div class="button-back"><button id="next" data-target="index.html" class="button" alt="Next">back</button></div>
 
     <main>
-        <!-- Customize your main content here -->
         <section>
             <h2>Close Reading of "Digital Inequalities in the Age of Artificial Intelligence and Big Data"</h2>
             <p>When reflecting on this reading, it goes into the ever-evolving landscape of technology, particularly the effects of it on the growth of digital inequalities in the context of artificial intelligence and big data, and how these inequalities shape sociological beliefs. The digital divide is separated into three distinct levels, from initial concerns about access to a lack of skills and usage, which culminate in the differentiated outcomes of digital technology use.</p>
@@ -52,10 +50,12 @@
 
     </main>
 
-    <button id="back-to-top" style="display: none;">Back to Top</button>
-    <br>
+    <div class="button-container">
+        <button id="back" data-target="blog9.html" class="button" alt="Back">Back</button>
+        <button id="back-to-top" style="display: none;">Back to Top</button>
+        <button id="next" data-target="blog11.html" class="button" alt="Next">Next</button>
+    </div>    <br>
     <footer>
-        <!-- Customize your footer content here -->
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
     </footer>
 </body>

@@ -8,11 +8,10 @@
     <meta name="keywords" content="Interactive Media, Web design, Game development, Blogs, Essays">
     <title>Blog Posts</title>
 
-    <!-- Link your CSS file here -->
     <link rel="stylesheet" href="../CSS/Main-Style.css">
     <link rel="stylesheet" href="../CSS/BlogPage-Style.css">
+    <link rel="stylesheet" href="../CSS/BackButton-Style.css">
 
-    <!-- Import any JavaScript files you need -->
     <script type="module">
         import { initialise } from "../Scripts/menu.js";
         initialise("Blog Posts")
@@ -21,28 +20,35 @@
 </head>
 <body>
     <header>
-        <!-- Customize your header content here -->
         <h1>Week Thirteen</h1>
 
-        <!-- Include any additional JavaScript files specific to this page -->
         <script src="../Scripts/mouseEvents.js" type="module"></script>
+        <script src="../Scripts/buttons.js" type="module"></script>
+        <script src="../Scripts/buttons.js" type="module"></script>
+        <script src="../Scripts/backToHome.js" type="module"></script>
 
-        <!-- Your navigation menu goes here -->
         <nav class="navList">
-            <!-- Add your navigation links here -->
         </nav>
     </header>
-
+    <div class="button-back"><button id="next" data-target="index.html" class="button" alt="Next">back</button></div>
+    
     <main>
-        <!-- Customize your main content here -->
-        <h2>Yo</h2>
-        <p>No blog post as yet</p>
+
+        <section class="additional-content">
+            <h2>Reflecting on the Internet as an Ethical Space</h2>
+            <p>As someone who is engaging with it every day for both personal and professional use, it is important that the online culture progresses to create a safer and more ethical space for all. Reflecting on the internet as an ethical space brings to light the large-scale impact that digital technologies have had on human interactions, societal values and beliefs, and the global community. To me, envisioning the internet as an ethical space entails widespread inclusivity by recognizing and upholding principles of fairness, respect, and accountability in all online activities and interactions. It means ensuring that the digital space fosters inclusivity, empowers people, and promotes the common good while safeguarding against harm and exploitation. In an ethical internet, there would be a priority on the individual; user privacy and data protection would be at the forefront, respecting individuals' autonomy and right to control their personal information.</p>
+            <p>An ethical internet would be a safe space wherein online harassment is combated alongside hate speech and misinformation, fostering a culture of respect and equality. It would promote digital literacy and critical thinking skills when engaging within the space in order to empower users to navigate the vast digital landscape responsibly and discern fact from fiction.</p>
+            <p>Achieving an ethical internet poses significant challenges. One of these major challenges is the rapidly evolving nature of technology, which often leaves behind regulatory frameworks and ethical considerations as it is a game of catch-up every time. The next challenge would be addressing issues of digital inequality, such as the digital divide and lack of access to this technology and information, as it is crucial to creating an ethical internet that truly serves the interests of the individual rather than the masses.</p>
+            <p>To fully realize this vision of an ethical internet, it requires global collaboration and collective action from everyone engaging in this space, from policymakers to moderators to even everyday citizens. By prioritizing ethics and values in the design, development, and use of digital technologies, we can work towards creating a more just, equitable, and inclusive online environment for all generations, present and future.</p>
+        </section>
     </main>
 
-    <button id="back-to-top" style="display: none;">Back to Top</button>
-    <br>
+    <div class="button-container">
+        <button id="back" data-target="blog12.html" class="button" alt="Back">Back</button>
+        <button id="back-to-top" style="display: none;">Back to Top</button>
+        <button id="next" data-target="index.html" class="button" alt="Next">Blog Post</button>
+    </div>    <br>
     <footer>
-        <!-- Customize your footer content here -->
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
     </footer>
 

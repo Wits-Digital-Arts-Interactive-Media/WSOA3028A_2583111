@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const listItem = document.createElement("li");
         const anchor = document.createElement("a");
         anchor.href = link;
-        anchor.textContent = customNames[index]; // Use custom name for the link
+        anchor.textContent = customNames[index]; 
         listItem.appendChild(anchor);
         navList.appendChild(listItem);
     });
