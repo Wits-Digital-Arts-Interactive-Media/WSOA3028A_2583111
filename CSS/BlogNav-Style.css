@@ -1,0 +1,36 @@
+/* BlogNav-Style.css */
+.blog-nav-section {
+    width: 100%;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+    padding: 10px 0;
+}
+
+.blog-nav-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-nav-section li {
+    margin: 5px 0;
+}
+
+.blog-nav-section a {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #ccc; /* Adjust border color as needed */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.blog-nav-section a:hover {
+    background-color: #000000; /* Adjust hover color as needed */
+    color: #ffffff; 
+    transform: scale(1.05);
+}

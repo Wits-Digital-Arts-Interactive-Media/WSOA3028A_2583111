@@ -10,13 +10,14 @@ const blogLinks = [
     "/WSOA3028A_2583111/Blogs/blog9.html",
     "/WSOA3028A_2583111/Blogs/blog10.html",
     "/WSOA3028A_2583111/Blogs/blog11.html",
-  
+    "/WSOA3028A_2583111/Blogs/blog12.html",
+    "/WSOA3028A_2583111/Blogs/blog13.html",
 ];
-
-let currentIndex = blogLinks.indexOf(window.location.pathname);  
 
 document.addEventListener("DOMContentLoaded", function() {
     const navSection = document.createElement("section");
+    navSection.classList.add("blog-nav-section");
+
     const navList = document.createElement("ul");
 
     blogLinks.forEach((link, index) => {
@@ -31,4 +32,3 @@ document.addEventListener("DOMContentLoaded", function() {
     navSection.appendChild(navList);
     document.body.insertBefore(navSection, document.querySelector("footer"));
 });
-

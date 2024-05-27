@@ -10,12 +10,15 @@
 
     <!-- Link your CSS file here -->
     <link rel="stylesheet" href="../CSS/Main-Style.css">
+    <link rel="stylesheet" href="../CSS/BlogPage-Style.css">
 
     <!-- Import any JavaScript files you need -->
     <script type="module">
         import { initialise } from "../Scripts/menu.js";
-        initialise("Blog Posts")
+        initialise("Blog Posts");
     </script>
+    <script src="../Scripts/backToTheTop.js" type="module"></script>
+    <script src="../Scripts/mouseEvents.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -32,11 +35,22 @@
     </header>
 
     <main>
-        <!-- Customize your main content here -->
-        <h2>Yo</h2>
-        <p>No blog post as yet</p>
+
+        <!-- Reflection on incorporating JavaScript -->
+        <section>
+            <h2>Reflection: Incorporating JavaScript</h2>
+            <p>In regard to JavaScript, it’s really flexible and seems to be a great tool for design, but I did find it hard to incorporate aspects of it without the use of CSS. I have not added much JavaScript, but what I did add was:</p>
+            <ul>
+                <li><strong>Navigation menu to the blog page:</strong> I derived this from the navigation menu Hanli had originally provided to us. Implementing the navigation menu with JavaScript allowed for dynamic control and easy updates without having to modify multiple HTML files. This made it simpler to maintain consistency across the site and ensured that any changes to the navigation structure could be made in one place.</li>
+                <li><strong>Mouse event when hovering over the navigation menu:</strong> I added an event: when you hover over any navigation menu link, the link gets bigger and changes color, and it goes back to normal when you move the mouse away. This interaction was implemented using JavaScript to manipulate the properties dynamically, enhancing the user experience by providing immediate visual feedback. This not only made the navigation more engaging but also helped guide the user's attention effectively.</li>
+            </ul>
+            <p><strong>How does that help you streamline your interaction design?</strong></p>
+            <p>These changes significantly streamlined the blog page's interaction design by improving efficiency, responsiveness, and user experience. Centralizing the control of the navigation menu allowed for easier updates and consistent changes across all pages, reducing errors and simplifying maintenance, which will be a big help in the future as the number of blog posts increases. The addition of mouse events for navigation links provided immediate visual feedback, making the interface more engaging and intuitive as links enlarge and change color upon hovering. This real-time feedback helps users quickly identify their selections, reducing confusion when engaging with the website. These enhancements not only improved the website for the user as they enhanced usability, but they also streamlined development and maintenance by allowing for the ability to easily and dynamically update and consistently design the website. All the JavaScript improvements provided a more efficient, consistent, and user-friendly interaction design, benefiting both the users and me.</p>
+        </section>
     </main>
 
+    <button id="back-to-top" style="display: none;">Back to Top</button>
+    <br>
     <footer>
         <!-- Customize your footer content here -->
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>

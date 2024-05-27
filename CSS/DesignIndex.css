@@ -1,0 +1,37 @@
+.design-nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px; /* Adjust top and bottom padding */
+}
+
+.design-nav-section ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Make the list take up full width */
+}
+
+.design-nav-section li {
+    flex-basis: calc(33.33% - 20px); /* One-third of the page width minus margin */
+    margin: 0px; /* Margin around each link */
+}
+
+.design-nav-section a {
+    display: block;
+    padding: 150px; /* Custom width and height */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px solid black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.design-nav-section a:hover {
+    background-color: rgb(0, 0, 0); /* Black background on hover */
+    color: white;
+}

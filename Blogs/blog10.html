@@ -9,13 +9,16 @@
     <title>Blog Posts</title>
 
     <!-- Link your CSS file here -->
-    <link rel="stylesheet" href="./CSS/Main-Style.css">
+    <link rel="stylesheet" href="../CSS/Main-Style.css">
+    <link rel="stylesheet" href="../CSS/BlogPage-Style.css">
 
     <!-- Import any JavaScript files you need -->
     <script type="module">
         import { initialise } from "../Scripts/menu.js";
-        initialise("Blog Posts")
+        initialise("Blog Posts");
     </script>
+    <script src="../Scripts/backToTheTop.js" type="module"></script>
+    <script src="../Scripts/mouseEvents.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -23,9 +26,6 @@
         <h1>Week Ten</h1>
 
         <!-- Include any additional JavaScript files specific to this page -->
-        <script src="../Scripts/mouseEvents.js" type="module"></script>
-
-        <!-- Your navigation menu goes here -->
         <nav class="navList">
             <!-- Add your navigation links here -->
         </nav>
@@ -33,10 +33,27 @@
 
     <main>
         <!-- Customize your main content here -->
-        <h2>Yo</h2>
-        <p>No blog post as yet</p>
+        <section>
+            <h2>Close Reading of "Digital Inequalities in the Age of Artificial Intelligence and Big Data"</h2>
+            <p>When reflecting on this reading, it goes into the ever-evolving landscape of technology, particularly the effects of it on the growth of digital inequalities in the context of artificial intelligence and big data, and how these inequalities shape sociological beliefs. The digital divide is separated into three distinct levels, from initial concerns about access to a lack of skills and usage, which culminate in the differentiated outcomes of digital technology use.</p>
+
+            <h3>First-Level Digital Divide: Access</h3>
+            <p>The first-level digital divide discusses disparities in access to digital technologies. The research focused on the gap in access to the internet among various socio-economic groups. There is an emphasis on the necessity of bridging this gap between those who have access and those who don’t. Although efforts to improve access are beneficial for both groups, mere access does not ensure equitable benefits for all users.</p>
+
+            <h3>Second-Level Digital Divide: Skills and Usage</h3>
+            <p>When the spread as well as access to these technologies improved, there was a shift into the second-level digital divide, which examines differences in skills and usage patterns of the digital technologies being engaged with. This divide highlights how different backgrounds, such as socio-economic status, education, gender, age, and race, influence the effective use of digital technologies. Concepts like the "mobile underclass” emphasize that despite having access to the technologies, there is still an amount of limitation, which emphasizes that access alone is insufficient if functionality, content availability, and openness are lacking. Artificial intelligence and big data exacerbate these issues, making it essential to critically examine how skills and usage vary among different demographic groups. The bridging of the initial gap allows for access, subsequently leading to a form of equality, although the ability to effectively use digital tools remains unevenly distributed.</p>
+
+            <h3>Third-Level Digital Divide: Outcomes</h3>
+            <p>The third level of the digital divide is a more recent focus that explores the varied outcomes of digital technology use. This divide expands the discussion to include the benefits and dangers resulting from internet use. This divide concerns how individuals translate digital engagement into tangible offline advantages, such as economic gains, social connections, and improved health. This level is deeply connected to feedback loops and the Matthew effect, where "the rich get richer." The example used to explore this idea is the Winkelvoss brothers, who were already privileged and leveraged their resources to become crypto billionaires, demonstrating how pre-existing advantages can be amplified by digital technology. Conversely, underprivileged groups face structural barriers such as limited internet infrastructure, high costs of devices and maintenance, or a lack of digital literacy that prevent them from achieving similar benefits or any benefits at all.</p>
+
+            <h3>The Role of Digital Traces</h3>
+            <p>An interesting idea brought up was the emerging concern about the significance of digital traces in digital inequalities. These traces can be referred to as the data left behind by a user. An argument brought up is that the data online about users also has substantial consequences, which I agree with, but I feel these consequences can be both beneficial and detrimental. The positives encompass the use of data to create personalized services as well as enhanced learning, which helps with agency and engagement with users, making it more accessible and user-friendly, but not all uses are for the betterment of the users, such as privacy invasion, in which companies collect data usually to monetize it for advertisers, which is something major media platforms do and is almost seen as the norm. Another issue would be the biases and discrimination found within algorithms, which leads to discrimination among different demographic groups, which disadvantages these groups based on biases found in their digital footprints rather than their actual skills.</p>
+        </section>
+
     </main>
 
+    <button id="back-to-top" style="display: none;">Back to Top</button>
+    <br>
     <footer>
         <!-- Customize your footer content here -->
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>

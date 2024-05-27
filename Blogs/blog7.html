@@ -10,6 +10,7 @@
 
     <!-- Link your CSS file here -->
     <link rel="stylesheet" href="../CSS/Main-Style.css">
+    <link rel="stylesheet" href="../CSS/BlogPage-Style.css">
 
     <!-- Import any JavaScript files you need -->
     <script type="module">
@@ -17,6 +18,7 @@
         initialise("Blog Posts")
     </script>
     <script src="../Scripts/animation.js" type="module"></script>
+    <script src="../Scripts/backToTheTop.js" type="module"></script>
 
 </head>
 <body>
@@ -30,6 +32,8 @@
     <main>
         <h2>Yo</h2>
         <p>No blog post this week ¯\_(ツ)_/¯</p>
+
+        <br>
         <figure>
             <img id="tumbleweed" src="../Images/tumbleweed.png"
               height="300"
@@ -38,7 +42,9 @@
               <figcaption></figcaption>
         </figure>
     </main>
-    
+
+        <button id="back-to-top" style="display: none;">Back to Top</button>
+    <br>
     <footer>
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
     </footer>
