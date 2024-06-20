@@ -1,5 +1,4 @@
 
-/* Nunito font import */
 @font-face {
     font-family: 'Nunito';
     src: local('Nunito-Black'), 
@@ -18,7 +17,6 @@
     font-style: normal;
 }
 
-/* Styling for main content */
 main {
     font-family: 'Nunito Light', sans-serif;
     margin: 0 auto; 
