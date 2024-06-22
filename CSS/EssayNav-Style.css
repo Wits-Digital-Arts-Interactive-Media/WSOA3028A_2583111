@@ -32,7 +32,12 @@
     transition: transform 0.5s;
 }
 
-.design-nav-section .card-inner:hover {
+.card-inner {
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.card-inner.flipped {
     transform: rotateY(180deg);
 }
 

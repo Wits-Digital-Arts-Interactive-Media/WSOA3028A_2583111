@@ -1,13 +1,27 @@
 document.addEventListener("DOMContentLoaded", function() {
     const cards = document.querySelectorAll('.card-inner');
 
+    let isAnimating = false;
+
     cards.forEach(card => {
         card.addEventListener('mouseover', function() {
-            card.style.transform = 'rotateY(180deg)';
+            if (!isAnimating) {
+                card.classList.add('flipped');
+            }
         });
 
         card.addEventListener('mouseout', function() {
-            card.style.transform = 'rotateY(0deg)';
+            if (!isAnimating) {
+                card.classList.remove('flipped');
+            }
+        });
+
+        card.addEventListener('transitionstart', function() {
+            isAnimating = true;
+        });
+
+        card.addEventListener('transitionend', function() {
+            isAnimating = false;
         });
 
         card.addEventListener('click', function(event) {

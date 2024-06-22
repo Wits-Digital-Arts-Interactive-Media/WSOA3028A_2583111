@@ -1,39 +1,20 @@
 /* Styling for main content */
 main {
-    font-family: 'Nunito', 'Nunito Light';
+    font-family: 'Nunito', sans-serif; /* Use 'Nunito' as primary font family */
     margin: 0 auto;
     max-width: 900px; 
     padding: 0 20px; 
 }
 
-section {
-    font-family: 'Nunito', 'Nunito Light';
-    font-weight: 400; 
+section, ul, li, p, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif; 
+    font-weight: 400; /* Default font weight for sections, lists, paragraphs */
     line-height: 1.6;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    font-family: 'Nunito', 'Nunito Light';
-}
-
-li {
-    margin-bottom: 20px; 
-    font-family: 'Nunito', 'Nunito Light';
-}
-
-p {
-    font-family: 'Nunito', 'Nunito Light';
-    font-weight: 400;
-    line-height: 1.6;
-    margin: 0 0 20px 0; 
 }
 
 /* Heading styles */
 h2, h3, h4, h5, h6 {
-    font-family: 'Nunito', 'Nunito Light';
-    font-weight: 900;
+    font-weight: 900; /* Bold font weight for headings */
 }
 
 /* Button styles */
@@ -53,7 +34,7 @@ h2, h3, h4, h5, h6 {
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s ease;
-    font-family: 'Nunito', 'Nunito Light';
+    font-family: 'Nunito', sans-serif; /* Apply 'Nunito' font family to buttons */
 }
 
 .button-container img {
