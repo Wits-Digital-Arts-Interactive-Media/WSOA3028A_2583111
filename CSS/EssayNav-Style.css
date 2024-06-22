@@ -12,27 +12,27 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px; 
+    max-width: 1200px;
 }
 
 .design-nav-section li {
-    width: 45%; 
-    margin: 2.5%; 
+    width: 45%;
+    margin: 2.5%;
 }
 
 .design-nav-section .card {
-    perspective: 1000px; 
+    perspective: 1000px;
 }
 
 .design-nav-section .card-inner {
     position: relative;
     width: 100%;
-    height: 353px; 
+    height: 350px;
     transform-style: preserve-3d;
     transition: transform 0.5s;
 }
 
-.design-nav-section .card:hover .card-inner {
+.design-nav-section .card-inner:hover {
     transform: rotateY(180deg);
 }
 
@@ -54,15 +54,21 @@
 .design-nav-section .card-front {
     background-color: rgba(255, 255, 255, 0.8);
     color: black;
+    z-index: 2;
 }
 
 .design-nav-section .card-back {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     transform: rotateY(180deg);
+    z-index: 1;
 }
 
-.design-nav-section .card a {
+.design-nav-section .card-back a {
+    color: white;
     text-decoration: none;
-    color: inherit;
+}
+
+.design-nav-section .card-back a:hover {
+    text-decoration: underline;
 }

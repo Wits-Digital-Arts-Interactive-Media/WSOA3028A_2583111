@@ -1,83 +1,64 @@
-        /* Nunito font import */
-        @font-face {
-            font-family: 'Nunito';
-            src: local('Nunito-Black'), 
-                local('Nunito-Black'),
-                url('../Fonts/Nunito-Black.ttf') format('truetype');
-            font-weight: 900;
-            font-style: normal;
-        }
+/* Styling for main content */
+main {
+    font-family: 'Nunito', 'Nunito Light';
+    margin: 0 auto;
+    max-width: 900px; 
+    padding: 0 20px; 
+}
 
-        @font-face {
-            font-family: 'Nunito Light';
-            src: local('Nunito-Light'), 
-                local('Nunito-Light'),
-                url('../Fonts/Nunito-Light.ttf') format('truetype');
-            font-weight: 300;
-            font-style: normal;
-        }
+section {
+    font-family: 'Nunito', 'Nunito Light';
+    font-weight: 400; 
+    line-height: 1.6;
+}
 
-        /* Styling for main content */
-        main {
-            font-family: 'Nunito Light', sans-serif;
-            margin: 0 auto;
-            max-width: 900px; 
-            padding: 0 20px; 
-        }
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Nunito', 'Nunito Light';
+}
 
-        section {
-            font-weight: 400; 
-            line-height: 1.6;
-        }
+li {
+    margin-bottom: 20px; 
+    font-family: 'Nunito', 'Nunito Light';
+}
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+p {
+    font-family: 'Nunito', 'Nunito Light';
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0 0 20px 0; 
+}
 
-        li {
-            margin-bottom: 20px; 
-        }
+/* Heading styles */
+h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', 'Nunito Light';
+    font-weight: 900;
+}
 
-        p {
-            font-family: 'Nunito Light', sans-serif;
-            font-weight: 400;
-            line-height: 1.6;
-            margin: 0 0 20px 0; 
-        }
+/* Button styles */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-        /* Heading styles */
-        h2, h3, h4, h5, h6 {
-            font-family: 'Nunito', sans-serif;
-            font-weight: 900;
-        }
+.button-container button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Nunito', 'Nunito Light';
+}
 
-        /* Button styles */
-        .button-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        .button-container button {
-            background-color: #000000;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .button-container button:hover {
-            background-color: #000000;
-        }
-
-        .button-container img {
-            width: 20px;
-            height: 20px;
-            vertical-align: middle;
-            margin-right: 5px;
-        }
+.button-container img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}

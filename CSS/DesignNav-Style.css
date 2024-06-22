@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0px; 
+    padding: 0;
 }
 
 .design-nav-section ul {
@@ -11,18 +11,18 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
-    width: 100%; 
+    width: 100%;
 }
 
 .design-nav-section li {
-    flex-basis: calc(33.33% - 20px); 
-    margin: 0px; 
+    flex-basis: calc(33.33% - 20px);
+    margin: 0;
 }
 
 .design-nav-section a {
     display: block;
     padding: 150px;
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.8);
     color: black;
     text-align: center;
     text-decoration: none;
@@ -32,6 +32,6 @@
 }
 
 .design-nav-section a:hover {
-    background-color: rgb(0, 0, 0); 
+    background-color: rgb(0, 0, 0);
     color: white;
 }

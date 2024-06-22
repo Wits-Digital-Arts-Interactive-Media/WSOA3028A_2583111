@@ -1,23 +1,6 @@
-/* Nunito font import */
-@font-face {
-    font-family: 'Nunito';
-    font-weight: 900;
-    font-style: normal;
-    src: local('Nunito-Black'), 
-         url('../Fonts/Nunito-Black.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Nunito Light';
-    font-weight: 300;
-    font-style: normal;
-    src: local('Nunito-Light'), 
-         url('../Fonts/Nunito-Light.ttf') format('truetype');
-}
-
 /* Styling for main content */
 main, section, ul, p {
-    font-family: 'Nunito Light', sans-serif;
+    font-family: 'Nunito', 'Nunito Light', sans-serif;
     margin: 0 auto;
     max-width: 900px;
     padding: 0 20px;
@@ -43,7 +26,7 @@ p {
 
 /* Heading styles */
 h2, h3, h4, h5, h6 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', 'Nunito Light', sans-serif;
     font-weight: 900;
 }
 
@@ -51,36 +34,34 @@ h2, h3, h4, h5, h6 {
 #back-to-top {
     position: absolute;
     left: 48%;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', 'Nunito Light', sans-serif;
     font-weight: 900;
     background-color: #000000;
     color: white;
     padding: 5px 6px;
 }
-li {
+
+/* References section styles */
+.references {
+    border: 2px solid #000;
+    padding: 20px;
+    margin-top: 20px;
     margin-bottom: 20px; 
+    border-radius: 5px;
+    background-color: #808080;
+    font-family: 'Nunito', 'Nunito Light';
 }
 
-p {
-    font-family: 'Nunito Light', sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    margin: 0 0 20px 0; 
+.references h2 {
+    margin-top: 0;
 }
 
-/* Heading styles */
-h2, h3, h4, h5, h6 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 900;
+.references ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
-/* Button styles */
-#back-to-top {
-    position: absolute;
-    left: 48%;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 900;
-    background-color: #000000;
-    color: white;
-    padding: 5px 6px;
+.references li {
+    margin-bottom: 10px;
 }
+

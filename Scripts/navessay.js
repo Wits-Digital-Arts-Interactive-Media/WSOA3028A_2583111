@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
 
     const summaries = [
-        "An in-depth analysis of user experience (UX) and user interface (UI) design principles.",
-        "A comprehensive study on the impact of digital colonialism in the modern world.",
+        "An in-depth analysis of the user interface (UI) and user experience (UX) design principles found on Takealot.com.",
+        "A study on the impact of digital colonialism in the modern world through the lense of a South African web developer.",
     ];
 
     const navSection = document.createElement("section");
@@ -29,14 +29,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const cardFront = document.createElement("div");
         cardFront.classList.add("card-front");
-        const anchor = document.createElement("a");
-        anchor.href = link;
-        anchor.textContent = customNames[index];
-        cardFront.appendChild(anchor);
+        const anchorFront = document.createElement("a");
+        anchorFront.href = link;
+        anchorFront.textContent = customNames[index];
+        cardFront.appendChild(anchorFront);
 
         const cardBack = document.createElement("div");
         cardBack.classList.add("card-back");
-        cardBack.textContent = summaries[index];
+        const anchorBack = document.createElement("a");
+        anchorBack.href = link;
+        anchorBack.textContent = summaries[index];
+        cardBack.appendChild(anchorBack);
 
         cardInner.appendChild(cardFront);
         cardInner.appendChild(cardBack);
@@ -50,5 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const main = document.createElement("main");
     main.appendChild(navSection);
 
-    document.body.insertBefore(main, document.querySelector("footer"));
+
+    navSection.appendChild(navList);
+    document.body.insertBefore(navSection, document.querySelector("footer"));
 });

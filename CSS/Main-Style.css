@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito', 'Nunito Light', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -16,6 +16,7 @@ header h1 {
     padding: 0 0 30px;
     margin: 0; 
     color: #000000;
+    font-family: 'Nunito', sans-serif; /* Use Nunito font */
 }
 
 /* Navigation styles */
@@ -32,7 +33,7 @@ nav.navList ul {
     display: flex;
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Add margin reset */
+    margin: 0; 
 }
 
 nav.navList li {
@@ -48,6 +49,7 @@ nav.navList a {
     font-weight: bold;
     border-radius: 5px; /* Make the border radius less rounded */
     transition: background-color 0.5s, color 0.4s;
+    font-family: 'Nunito Light', sans-serif; /* Use Nunito Light font */
 }
 
 nav.navList a:hover {
@@ -71,6 +73,7 @@ footer {
     background-color: #000000; 
     color: #ffffff; 
     margin-top: 20px; 
+    font-family: 'Nunito Light', sans-serif; /* Use Nunito Light font */
 }
 
 footer p {
@@ -115,6 +118,7 @@ figure img {
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s ease;
+    font-family: 'Nunito', sans-serif;
 }
 
 .button-container button:hover {
