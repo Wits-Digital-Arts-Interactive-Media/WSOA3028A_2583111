@@ -21,8 +21,6 @@
      <script src="./Scripts/navblog.js" type="module"></script>
      <script src="./Scripts/navdesign.js" type="module"></script>
      <script src="./Scripts/navessay.js" type="module"></script>
-     <script src="./Scripts/interactiveImg.js" type="module"></script>
-
 
 </head>
 <body>
@@ -52,6 +50,7 @@
                     <div class="art-slide interactive-element">                
                         <figure>
                             <img src="./Images/Website Homepage.jpg"
+                                 height="30"
                                  alt="Homepage Wireframe"
                                  title="Homepage Wireframe">
                             <figcaption>Homepage Wireframe</figcaption>     
@@ -61,6 +60,7 @@
                     <div class="art-slide interactive-element">              
                         <figure>
                             <img src="./Images/User Flow.png"
+                                 height="10"
                                  alt="User Flow"
                                  title="User Flow">
                             <figcaption>User Flow</figcaption>     
@@ -70,6 +70,7 @@
                     <div class="art-slide interactive-element">                
                         <figure>
                             <img src="./Images/Takealot.com.png"
+                                 height="10"
                                  alt="Takealot.com"
                                  title="Takealot.com">
                             <figcaption>Takealot.com</figcaption>     
@@ -113,3 +114,15 @@
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
     </footer>
     
+    <!-- Separate script for art slider figure click event -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const artSlides = document.querySelectorAll('.art-slide');
+    
+            artSlides.forEach(slide => {
+                slide.addEventListener('click', () => {
+                    window.location.href = `${window.location.origin}/Portfolios/index.html`;
+                });
+            });
+        });
+    </script>
