@@ -16,6 +16,7 @@
         import { initialise } from "./Scripts/menu.js";
         initialise("Home")
     </script>
+     <script type="module" src="./Scripts/artSlider.js"></script>
 </head>
 <body>
 
@@ -29,12 +30,55 @@
         </nav>
     </header>
 
-    <main style="text-align: center;">
-        <h2>Hey Yo</h2>
-        <p>Welcome to my little website. I'll be using this to post all my work for Interactive Media here.</p>
+    <main>
+        <section class="intro-section">
+            <h2>Hey Yo</h2>
+            <p>Welcome to my little website. I'll be using this to post all my work for Interactive Media here.</p>
+        </section>
 
+        <!-- Container for Art and Writing Sections -->
+        <div class="container">
+            <!-- Art Slider Section -->
+            <section class="art-slider">
+                <h3>Art Pieces</h3>
+                <div class="art-slider-container">
+                    <div class="art-slide">Art Piece 1</div>
+                    <div class="art-slide">Art Piece 2</div>
+                    <div class="art-slide">Art Piece 3</div>
+                </div>
+                <button class="prev-slide">&#10094;</button>
+                <button class="next-slide">&#10095;</button>
+            </section>
+
+            <!-- Writing Section -->
+            <section class="writing-slider">
+                <h3>Writing Pieces</h3>
+                <div class="writing-slider-container">
+                    <a href="blog12.html" class="writing-slide">
+                        <h4>Blog Post 12: Decolonising Technology / Responsive Design</h4>
+                        <p>This blog explores how CSS improves the visual appeal of HTML, the benefits and challenges of responsive design, and the importance of inclusive web design for diverse user groups.</p>
+                    </a>
+                    <a href="blog13.html" class="writing-slide">
+                        <h4>Blog Post 13: Ethical Internet / Flexbox</h4>
+                        <p>This blog discusses the importance of creating an ethical internet that prioritizes inclusivity, fairness, respect, and user privacy while combating harassment and misinformation in order to create digital equality.</p>
+                    </a>
+                    <a href="Essay2.html" class="writing-slide">
+                        <h4>Essay 2: Digital Colonialism</h4>
+                        <p>The essay discusses how tech companies, especially Google, perpetuate digital colonialism by exploiting labor and resources in developing regions, and it highlights issues with biased AI technologies like Google's Gemini.</p>
+                    </a>
+                    <a href="wireframes.html" class="writing-slide">
+                        <h4>Wireframes</h4>
+                        <p>This is a demonstration of all iterations of my wireframes</p>
+                    </a>
+                    <a href="../WSOA3028A_2583111/Profile/index.html" class="writing-slide">
+                        <h4>Profile</h4>
+                        <p>Learn a bit about me.</p>
+                    </a>
+                </div>
+            </section>
+        </div>
     </main>
-
+    
     <footer>
         <p>Brought To You By The Shadow Government, 2024. All rights reserved</p>
     </footer>
