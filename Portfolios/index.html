@@ -7,12 +7,15 @@
 
 <link rel="stylesheet" href="../CSS/Main-Style.css">
 <link rel="stylesheet" href="../CSS/Homepage.css">
+<link rel="stylesheet" href="../CSS/Portfolio-Style.css">
 
 
 <script type="module">
     import { initialise } from "../Scripts/menu.js";
     initialise("Portfolio")
 </script>
+<script src="../Scripts/fullScreen.js" type="module"></script>
+
 </head>
 <body>
 
@@ -26,9 +29,31 @@
 </header>
 
 <main>
-    <h2>Yo</h2>
-    <section>
-        
+    <h2>Art Portfolio</h2>
+    <section class="portfolio">
+        <div class="portfolio-item">
+            <div class="portfolio-img">
+                <a href="../Images/PortfolioArt/Jumping Enemy Turnaround.jpg" class="image-link">
+                    <img src="../Images/PortfolioArt/Jumping Enemy Turnaround.jpg" alt="Artwork 1">
+                </a>
+            </div>
+            <div class="portfolio-details">
+                <h3>Artwork 1</h3>
+                <p>Description of Artwork 1.</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="portfolio-img">
+                <a href="../Images/PortfolioArt/Shooting Enemy Turnaround.jpg" class="image-link">
+                    <img src="../Images/PortfolioArt/Shooting Enemy Turnaround.jpg" alt="Artwork 2">
+                </a>
+            </div>
+            <div class="portfolio-details">
+                <h3>Artwork 2</h3>
+                <p>Description of Artwork 2.</p>
+            </div>
+        </div>
+        <!-- Add more portfolio items as needed -->
     </section>
 </main>
 

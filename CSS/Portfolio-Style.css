@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Nunito', 'Nunito Light', sans-serif;
+    background-color: #f7f7f7;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+.portfolio {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    width: calc(75% - 10px); /* Two items per row with spacing */
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.portfolio-item .portfolio-img {
+    width: 100%;
+    position: relative;
+}
+
+.portfolio-item .portfolio-img img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover .portfolio-img img {
+    transform: scale(1.1); /* Enlarge image on hover */
+}
+
+.portfolio-item .portfolio-details {
+    width: 50%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item .portfolio-details h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.portfolio-item .portfolio-details p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Flip every second/even item */
+.portfolio-item:nth-child(even) {
+    justify-content: center; /* Align items to the left on smaller screens */
+    margin-left: auto; /* Align to the right */
+}
+
+.portfolio-item:nth-child(even) .portfolio-details {
+    order: 1; /* Move the details box to the start */
+}
+
+.portfolio-item:nth-child(even) .portfolio-img {
+    order: 2; /* Move the image to the end */
+}
+
+.fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: auto; /* Enable scrolling if the image is larger than the screen */
+}
+
+.fullscreen-content {
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+.fullscreen-content img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.close-fullscreen-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: 100%; /* Stack items vertically on smaller screens */
+    }
+
+    .portfolio-item .portfolio-details {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-item {
+        width: 100%; /* Stack items vertically on even smaller screens */
+    }
+
+    .portfolio-item .portfolio-details {
+        padding: 10px;
+    }
+}

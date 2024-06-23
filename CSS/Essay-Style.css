@@ -65,3 +65,24 @@ h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 22px; /* Decrease header font size */
+    }
+
+    main section {
+        font-size: 15px; /* Decrease font size for sections */
+    }
+
+    nav.navList a {
+        padding: 10px 15px; /* Adjust padding for smaller boxes */
+        font-size: 14px; /* Decrease font size for navigation links */
+    }
+
+    nav.navList li {
+        margin: 0 8px; /* Adjust margin between menu items */
+    }
+}
+
+
