@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Link each art slide to Portfolio/index.html
     artSlides.forEach((slide, index) => {
         slide.addEventListener("click", () => {
-            window.location.href = "../Portfolios/index.html";
+            window.location.href = "./Portfolios/index.html";
         });
     });
 
