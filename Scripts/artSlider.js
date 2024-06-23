@@ -1,3 +1,9 @@
+const blogLinks = [
+    "/WSOA3028A_2583111/Portfolios/index.html",
+];
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     let artIndex = 0;
     const artSlides = document.querySelectorAll(".art-slide");
