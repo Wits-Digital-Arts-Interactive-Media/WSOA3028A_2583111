@@ -32,12 +32,33 @@ document.addEventListener("DOMContentLoaded", () => {
         showWritingSlide(writingIndex);
     }
 
-    document.querySelector(".next-slide").addEventListener("click", nextArtSlide);
-    document.querySelector(".prev-slide").addEventListener("click", prevArtSlide);
+    // Function to show a slide
+    function showSlide(slides, index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === index);
+        });
+    }
+
+    // Event listener for previous slide button
+    document.querySelector(".prev-slide").addEventListener("click", () => {
+        prevArtSlide();
+    });
+
+    // Event listener for next slide button
+    document.querySelector(".next-slide").addEventListener("click", () => {
+        nextArtSlide();
+    });
+
+    // Link each art slide to Portfolio/index.html
+    artSlides.forEach((slide, index) => {
+        slide.addEventListener("click", () => {
+            window.location.href = "../Portfolios/index.html";
+        });
+    });
 
     showArtSlide(artIndex);
     showWritingSlide(writingIndex);
 
     setInterval(nextArtSlide, 5000);
-    setInterval(nextWritingSlide, 15000);
+    setInterval(nextWritingSlide, 7500);
 });
