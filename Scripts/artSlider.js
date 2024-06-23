@@ -1,5 +1,7 @@
-<script src="../Scripts/menu.js" type="module"></script>
+const blogLinks = [
+    "/WSOA3028A_2583111/Portfolios/index.html",
 
+];
 
 document.addEventListener("DOMContentLoaded", () => {
     let artIndex = 0;
@@ -63,5 +65,5 @@ document.addEventListener("DOMContentLoaded", () => {
     showWritingSlide(writingIndex);
 
     setInterval(nextArtSlide, 5000);
-    setInterval(nextWritingSlide, 7500);
+    setInterval(nextWritingSlide, 6000);
 });
