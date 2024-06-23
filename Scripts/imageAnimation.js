@@ -4,7 +4,7 @@
 
         artSlides.forEach(slide => {
             slide.addEventListener('click', () => {
-                window.location.href = `${window.location.origin}/Portfolios/index.html`;
+                window.location.href = './Portfolios/index.html';
             });
         });
     });
