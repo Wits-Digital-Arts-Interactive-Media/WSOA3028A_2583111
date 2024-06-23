@@ -31,6 +31,7 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 /* Art Slider Section */
@@ -39,6 +40,7 @@ main {
     text-align: center;
     margin-right: 20px;
     position: relative;
+    margin-bottom: 20px; /* Add margin for spacing on smaller screens */
 }
 
 .art-slider h3 {
@@ -105,6 +107,7 @@ main {
 .writing-slider {
     flex: 1;
     text-align: center;
+    margin-bottom: 20px; /* Add margin for spacing on smaller screens */
 }
 
 .writing-slider h3 {
@@ -158,17 +161,21 @@ footer {
         font-size: 22px; /* Decrease header font size */
     }
 
-    main section {
-        font-size: 15px; /* Decrease font size for sections */
+    main {
+        padding: 20px; /* Adjust main padding */
     }
 
-    nav.navList a {
-        padding: 10px 15px; /* Adjust padding for smaller boxes */
-        font-size: 14px; /* Decrease font size for navigation links */
+    .container {
+        flex-direction: column; /* Stack items vertically */
     }
 
-    nav.navList li {
-        margin: 0 8px; /* Adjust margin between menu items */
+    .art-slider {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin */
+    }
+
+    .writing-slider {
+        margin-bottom: 20px; /* Add bottom margin */
     }
 }
 
@@ -178,16 +185,20 @@ footer {
         font-size: 20px; /* Further decrease header font size */
     }
 
-    main section {
-        font-size: 14px; /* Further decrease font size for sections */
+    main {
+        padding: 10px; /* Further adjust main padding */
     }
 
-    nav.navList a {
-        padding: 8px 12px; /* Further adjust padding for smaller boxes */
-        font-size: 12px; /* Further decrease font size for navigation links */
+    .art-slider h3, .writing-slider h3 {
+        font-size: 18px; /* Adjust subheading font size */
     }
 
-    nav.navList li {
-        margin: 0 5px; /* Further adjust margin between menu items */
+    .art-slide, .writing-slide {
+        font-size: 16px; /* Adjust slide font size */
+    }
+
+    .prev-slide, .next-slide {
+        font-size: 20px; /* Adjust button font size */
+        padding: 8px; /* Adjust button padding */
     }
 }
