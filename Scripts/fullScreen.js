@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const imageUrl = this.getAttribute('href');
 
-            // Create a fullscreen container
             const fullscreenContainer = document.createElement('div');
             fullscreenContainer.classList.add('fullscreen-container');
             fullscreenContainer.innerHTML = `
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             document.body.appendChild(fullscreenContainer);
 
-            // Close fullscreen on button click
             const closeBtn = fullscreenContainer.querySelector('.close-fullscreen-btn');
             closeBtn.addEventListener('click', function() {
                 document.body.removeChild(fullscreenContainer);

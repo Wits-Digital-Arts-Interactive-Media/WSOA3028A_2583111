@@ -12,13 +12,13 @@
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
-    font-family: 'Nunito', sans-serif; /* Use 'Nunito' as primary font family */
+    font-family: 'Nunito', sans-serif; 
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .button-back button:hover {
-    background-color: #444444; /* Darken button color on hover */
+    background-color: #444444;
 }
 
 /* Media query for smaller screens */

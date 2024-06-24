@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Nunito', 'Nunito Light', sans-serif;
     background-color: #f7f7f7;
@@ -19,7 +18,7 @@ h2 {
 }
 
 .portfolio-item {
-    width: calc(75% - 10px); /* Two items per row with spacing */
+    width: calc(75% - 10px); /* Items per row with spacing */
     margin-bottom: 50px;
     display: flex;
 }
@@ -62,16 +61,16 @@ h2 {
 
 /* Flip every second/even item */
 .portfolio-item:nth-child(even) {
-    justify-content: center; /* Align items to the left on smaller screens */
-    margin-left: auto; /* Align to the right */
+    justify-content: center; 
+    margin-left: auto; 
 }
 
 .portfolio-item:nth-child(even) .portfolio-details {
-    order: 1; /* Move the details box to the start */
+    order: 1; 
 }
 
 .portfolio-item:nth-child(even) .portfolio-img {
-    order: 2; /* Move the image to the end */
+    order: 2; 
 }
 
 .fullscreen-container {
@@ -85,7 +84,7 @@ h2 {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    overflow: auto; /* Enable scrolling if the image is larger than the screen */
+    overflow: auto; 
 }
 
 .fullscreen-content {
@@ -112,7 +111,6 @@ h2 {
     cursor: pointer;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .portfolio-item {
         width: 100%; /* Stack items vertically on smaller screens */

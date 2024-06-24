@@ -1,6 +1,5 @@
-/* Styling for main content */
 main, section, ul, p {
-    font-family: 'Nunito', sans-serif; /* Use 'Nunito' as primary font family */
+    font-family: 'Nunito', sans-serif; 
     margin: 0 auto;
     max-width: 900px;
     padding: 0 20px;
@@ -26,7 +25,7 @@ p {
 
 /* Heading styles */
 h2, h3, h4, h5, h6 {
-    font-family: 'Nunito', sans-serif; /* Use 'Nunito' as primary font family */
+    font-family: 'Nunito', sans-serif; 
     font-weight: 900;
 }
 
@@ -34,7 +33,7 @@ h2, h3, h4, h5, h6 {
 #back-to-top {
     position: absolute;
     left: 48%;
-    font-family: 'Nunito', sans-serif; /* Use 'Nunito' as primary font family */
+    font-family: 'Nunito', sans-serif; 
     font-weight: 900;
     background-color: #000000;
     color: white;

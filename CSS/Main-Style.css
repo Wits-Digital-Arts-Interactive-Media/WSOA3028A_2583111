@@ -11,38 +11,36 @@ header {
     text-align: center;
     color: #ffffff;
     padding: 20px 0;
-    background-color: #ffffff; /* Header background color */
+    background-color: #ffffff; 
 }
 
 header h1 {
-    font-size: 24px; /* Header title font size */
+    font-size: 24px; 
     padding: 0 0 20px;
     margin: 0;
     color: #000000;
 }
 
-/* Main content area */
 main {
     padding: 20px;
 }
 
-/* White box styling for sections within the main content */
 main section {
-    background: #ffffff; /* White background */
+    background: #ffffff; 
     padding: 15px;
     margin-bottom: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border-radius: 5px; /* Optional: Add some border radius for rounded corners */
-    font-size: 16px; /* Font size for sections */
-    line-height: 1.6; /* Line height for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+    font-size: 16px; 
+    line-height: 1.6; 
 }
 
 /* Footer styles */
 footer {
-    font-size: 12px; /* Font size for footer text */
+    font-size: 12px; 
     text-align: center;
     padding: 10px;
-    background-color: #000000; /* Footer background color */
+    background-color: #000000; 
     color: #ffffff;
     margin-top: 20px;
 }
@@ -71,74 +69,70 @@ nav.navList li {
 
 nav.navList a {
     display: block;
-    padding: 12px 20px; /* Increase padding for larger boxes */
-    background-color: #ffffff; /* White background */
-    color: #000000; /* Black text color */
+    padding: 12px 20px; 
+    background-color: #ffffff; 
+    color: #000000; 
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px; /* Make the border radius less rounded */
+    border-radius: 5px; 
     transition: background-color 0.5s, color 0.4s;
 }
 
 nav.navList a:hover {
-    background-color: #000000; /* Black background on hover */
-    color: #ffffff; /* White text color on hover */
+    background-color: #000000; 
+    color: #ffffff; 
 }
 
-/* Style for the current page link */
 nav.navList a.current {
-    background-color: #000000; /* Black background for current page */
-    color: #ffffff; /* White text color for current page */
-    pointer-events: none; /* Disable pointer events for current page link */
-    cursor: default; /* Change cursor to default */
+    background-color: #000000; 
+    color: #ffffff; 
+    pointer-events: none; 
+    cursor: default; 
 }
 
-/* Responsive image size */
 figure img {
     width: 100%;
     height: auto;
     max-width: 100%;
     display: block; /* Ensure images don't overflow */
-    margin: 0 auto; /* Center align images */
+    margin: 0 auto; 
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 22px; /* Decrease header font size */
+        font-size: 22px; 
     }
 
     main section {
-        font-size: 15px; /* Decrease font size for sections */
+        font-size: 15px; 
     }
 
     nav.navList a {
-        padding: 10px 15px; /* Adjust padding for smaller boxes */
-        font-size: 14px; /* Decrease font size for navigation links */
+        padding: 10px 15px;
+        font-size: 14px; 
     }
 
     nav.navList li {
-        margin: 0 8px; /* Adjust margin between menu items */
+        margin: 0 8px; 
     }
 }
 
-/* Media query for even smaller screens */
 @media (max-width: 480px) {
     header h1 {
-        font-size: 20px; /* Further decrease header font size */
+        font-size: 20px; 
     }
 
     main section {
-        font-size: 14px; /* Further decrease font size for sections */
+        font-size: 14px; 
     }
 
     nav.navList a {
-        padding: 8px 12px; /* Further adjust padding for smaller boxes */
-        font-size: 12px; /* Further decrease font size for navigation links */
+        padding: 8px 12px; 
+        font-size: 12px;
     }
 
     nav.navList li {
-        margin: 0 5px; /* Further adjust margin between menu items */
+        margin: 0 5px; 
     }
 }
 
@@ -156,14 +150,14 @@ figure img {
     border: none;
     border-radius: 5px;
     padding: 8px 16px;
-    font-size: 16px; /* Font size for buttons */
+    font-size: 16px; 
     cursor: pointer;
     transition: background 0.3s ease;
     font-family: 'Nunito', sans-serif;
 }
 
 .button-container button:hover {
-    background-color: #515050; /* Darken button color on hover */
+    background-color: #515050; 
 }
 
 .button-container img {
@@ -173,7 +167,6 @@ figure img {
     margin-right: 5px;
 }
 
-/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
 }

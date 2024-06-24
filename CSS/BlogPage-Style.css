@@ -1,6 +1,5 @@
-/* Styling for main content */
 main {
-    font-family: 'Nunito', sans-serif; /* Use 'Nunito' as primary font family */
+    font-family: 'Nunito', sans-serif; 
     margin: 0 auto;
     max-width: 900px; 
     padding: 0 20px; 
@@ -8,13 +7,13 @@ main {
 
 section, ul, li, p, h2, h3, h4, h5, h6 {
     font-family: 'Nunito', sans-serif; 
-    font-weight: 400; /* Default font weight for sections, lists, paragraphs */
+    font-weight: 400;
     line-height: 1.6;
 }
 
 /* Heading styles */
 h2, h3, h4, h5, h6 {
-    font-weight: 900; /* Bold font weight for headings */
+    font-weight: 900;
 }
 
 /* Button styles */
@@ -34,7 +33,7 @@ h2, h3, h4, h5, h6 {
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s ease;
-    font-family: 'Nunito', sans-serif; /* Apply 'Nunito' font family to buttons */
+    font-family: 'Nunito', sans-serif; 
 }
 
 .button-container img {
